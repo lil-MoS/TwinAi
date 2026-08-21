@@ -1,85 +1,60 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه تستی</title>
+    <title>Test Site</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: #fff;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
+            min-height: 100vh;
+            margin: 0;
             padding: 20px;
         }
-        .card {
-            background: rgba(255,255,255,0.08);
-            backdrop-filter: blur(12px);
-            padding: 50px 40px;
+        .container {
+            background: #fff;
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+        h1 { color: #2c3e50; }
+        p { color: #555; line-height: 1.6; }
+        .badge {
+            background: #3498db;
+            color: #fff;
+            padding: 8px 20px;
             border-radius: 30px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-            max-width: 550px;
-            width: 100%;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-            background: linear-gradient(45deg, #f093fb, #f5576c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .sub {
-            color: #aaa;
-            font-size: 1.1rem;
-            margin-bottom: 25px;
-        }
-        p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #ddd;
-            margin-bottom: 30px;
+            display: inline-block;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
         }
         .btn {
-            display: inline-block;
-            background: #f5576c;
+            background: #2c3e50;
             color: #fff;
-            padding: 14px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: 0.3s;
             border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
             cursor: pointer;
+            transition: 0.3s;
         }
-        .btn:hover {
-            transform: scale(1.05);
-            background: #ff6b81;
-            box-shadow: 0 8px 25px rgba(245, 87, 108, 0.4);
-        }
-        .footer {
-            margin-top: 30px;
-            font-size: 0.8rem;
-            color: #666;
-        }
+        .btn:hover { background: #34495e; transform: translateY(-2px); }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>🚀 تست موفق</h1>
-        <div class="sub">GitHub Pages Deployment</div>
-        <p>
-            این صفحه با استفاده از ابزار <strong>sitesaz</strong> روی گیت‌هاب پیج منتشر شده است.<br>
-            اگر این متن را می‌بینید، یعنی همه چیز درست کار می‌کند!
-        </p>
-        <a href="#" class="btn">شروع کنید</a>
-        <div class="footer">✨ ساخته شده با ♥ برای تست</div>
+    <div class="container">
+        <div class="badge">✅ تست موفق</div>
+        <h1>سلام! این یک صفحه تستی است</h1>
+        <p>این فایل به عنوان نمونه برای تست ابزار <strong>sitesaz</strong> ساخته شده است.</p>
+        <p>اگر اینجا هستید، یعنی مراحل آپلود و فعال‌سازی به درستی انجام شده.</p>
+        <button class="btn" onclick="alert('تبریک! 🎉')">کلیک کنید</button>
     </div>
 </body>
 </html>
