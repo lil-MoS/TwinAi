@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>هوش مصنوعی داخلی، رایگان و نامحدود | Twin AI در پیام‌رسان بله</title>
-    <meta name="description" content="هوش مصنوعی داخلی، رایگان و نامحدود در پیام‌رسان بله. ترجمه، تولید محتوا، کدنویسی، ساخت تصویر و ابزارهای متنوع بدون محدودیت. Twin AI همراه همیشگی شماست." />
-    <meta name="keywords" content="هوش مصنوعی داخلی, هوش مصنوعی رایگان, هوش مصنوعی نامحدود و رایگان, Twin AI, بله, ربات هوش مصنوعی, ترجمه, تولید محتوا, کدنویسی, ساخت تصویر, بازنویسی, اصلاح گرامر" />
+    <title>هوش مصنوعی رایگان و نامحدود | Twin AI در بله - ساخت عکس با هوش مصنوعی</title>
+    <meta name="description" content="هوش مصنوعی رایگان و نامحدود Twin AI در پیام‌رسان بله. ساخت عکس با هوش مصنوعی، ترجمه، تولید محتوا، کدنویسی و ابزارهای متنوع بدون محدودیت. بهترین هوش مصنوعی ایرانی." />
+    <meta name="keywords" content="هوش مصنوعی رایگان, هوش مصنوعی نامحدود, ساخت عکس با هوش مصنوعی, بهترین هوش مصنوعی, هوش مصنوعی فارسی, ربات هوش مصنوعی, Twin AI, بله, ترجمه, تولید محتوا, کدنویسی, هوش مصنوعی ایرانی" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://twinai.example.com/" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="هوش مصنوعی داخلی، رایگان و نامحدود | Twin AI در بله" />
-    <meta property="og:description" content="با هوش مصنوعی داخلی، رایگان و نامحدود Twin AI در پیام‌رسان بله، به تمام ابزارهای هوشمند دسترسی داشته باشید." />
+    <meta property="og:title" content="هوش مصنوعی رایگان و نامحدود | Twin AI در بله" />
+    <meta property="og:description" content="با هوش مصنوعی رایگان و نامحدود Twin AI در بله، ساخت عکس، ترجمه، تولید محتوا و کدنویسی را تجربه کنید." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://twinai.example.com/" />
     <meta property="og:image" content="https://twinai.example.com/og-image.jpg" />
@@ -24,7 +24,7 @@
             "name": "Twin AI",
             "applicationCategory": "AI Assistant",
             "operatingSystem": "Bale Messenger",
-            "description": "هوش مصنوعی داخلی، رایگان و نامحدود برای ترجمه، تولید محتوا، کدنویسی، ساخت تصویر و ابزارهای هوشمند در پیام‌رسان بله.",
+            "description": "هوش مصنوعی رایگان و نامحدود برای ساخت عکس، ترجمه، تولید محتوا، کدنویسی و ابزارهای هوشمند در پیام‌رسان بله.",
             "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -43,43 +43,100 @@
         }
 
         body {
-            font-family: 'Segoe UI', 'Tahoma', 'Vazir', 'Noto Sans Arabic', sans-serif;
-            background: linear-gradient(145deg, #f8faff 0%, #eef3fc 100%);
+            font-family: 'Vazir', 'Segoe UI', 'Tahoma', 'Noto Sans Arabic', sans-serif;
+            background: linear-gradient(145deg, #f0f4ff 0%, #e6edf9 100%);
             color: #1a2332;
             line-height: 1.7;
-            padding: 0 20px;
             min-height: 100vh;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px 0 40px;
-        }
-
-        /* ===== HEADER ===== */
-        header {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            flex-wrap: wrap;
-            padding: 20px 0 10px;
-            border-bottom: 1px solid rgba(0, 20, 80, 0.08);
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden;
         }
 
+        /* ===== ANIMATED BACKGROUND ===== */
+        .bg-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .bg-shapes span {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(37, 99, 235, 0.04);
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .bg-shapes span:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            top: -80px;
+            left: -80px;
+            animation-delay: 0s;
+        }
+        .bg-shapes span:nth-child(2) {
+            width: 400px;
+            height: 400px;
+            bottom: -120px;
+            right: -120px;
+            animation-delay: -5s;
+            background: rgba(124, 58, 237, 0.04);
+        }
+        .bg-shapes span:nth-child(3) {
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: -10s;
+            background: rgba(37, 99, 235, 0.03);
+        }
+
+        @keyframes float {
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+            33% {
+                transform: translate(30px, -30px) scale(1.05);
+            }
+            66% {
+                transform: translate(-20px, 20px) scale(0.95);
+            }
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 820px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* ===== LOGO ===== */
         .logo {
-            font-size: 1.9rem;
-            font-weight: 800;
+            font-size: 3.2rem;
+            font-weight: 900;
             background: linear-gradient(135deg, #2563eb, #7c3aed);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            letter-spacing: -0.5px;
+            letter-spacing: -1px;
+            margin-bottom: 8px;
+            animation: fadeDown 0.8s ease forwards;
+            opacity: 0;
+            transform: translateY(-30px);
         }
 
         .logo span {
@@ -88,389 +145,29 @@
             background: none;
         }
 
-        nav {
-            display: flex;
-            gap: 12px 22px;
-            flex-wrap: wrap;
-            font-weight: 500;
+        @keyframes fadeDown {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        nav a {
+        /* ===== TAGLINE ===== */
+        .tagline {
+            font-size: 1.4rem;
             color: #2d3a4f;
-            transition: color 0.2s;
-            font-size: 0.95rem;
-            padding: 6px 0;
-            border-bottom: 2px solid transparent;
+            margin-bottom: 12px;
+            animation: fadeUp 0.8s ease 0.2s forwards;
+            opacity: 0;
+            transform: translateY(20px);
         }
 
-        nav a:hover {
-            color: #2563eb;
-            border-bottom-color: #2563eb;
-        }
-
-        .nav-cta {
-            background: #2563eb;
-            color: #fff !important;
-            padding: 8px 20px !important;
-            border-radius: 40px;
-            border-bottom: none !important;
-            transition: background 0.2s, transform 0.1s;
-        }
-
-        .nav-cta:hover {
-            background: #1d4ed8;
-            transform: scale(1.02);
-            color: #fff !important;
-            border-bottom: none !important;
-        }
-
-        /* ===== HERO ===== */
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 50px 0 40px;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            line-height: 1.2;
-            max-width: 750px;
-            margin-bottom: 16px;
-        }
-
-        .hero h1 .highlight {
+        .tagline strong {
             background: linear-gradient(135deg, #2563eb, #7c3aed);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: #3a4a62;
-            max-width: 620px;
-            margin-bottom: 30px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 16px 24px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 36px;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: all 0.2s;
-            border: none;
-            cursor: pointer;
-            background: #eef2f9;
-            color: #1a2332;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
-        }
-
-        .btn-primary {
-            background: #2563eb;
-            color: #fff;
-            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.25);
-        }
-
-        .btn-primary:hover {
-            background: #1d4ed8;
-            transform: translateY(-3px);
-            box-shadow: 0 14px 28px rgba(37, 99, 235, 0.35);
-        }
-
-        .btn-secondary {
-            background: #ffffff;
-            border: 1px solid #d0d9e8;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
-        }
-
-        .btn-secondary:hover {
-            background: #f5f8ff;
-            border-color: #2563eb;
-            transform: translateY(-3px);
-        }
-
-        .btn .icon {
-            margin-left: 8px;
-        }
-
-        /* ===== STATS ===== */
-        .stats {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 40px 70px;
-            padding: 30px 0 50px;
-            border-top: 1px solid rgba(0, 20, 80, 0.06);
-            margin-top: 10px;
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 2.1rem;
-            font-weight: 800;
-            color: #1a2332;
-        }
-
-        .stat-label {
-            font-size: 0.95rem;
-            color: #5a6a82;
-        }
-
-        /* ===== TOOLS SECTION ===== */
-        .section-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            text-align: center;
-            margin: 60px 0 20px;
-        }
-
-        .section-sub {
-            text-align: center;
-            color: #4a5a72;
-            max-width: 600px;
-            margin: 0 auto 40px;
-            font-size: 1.1rem;
-        }
-
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-            gap: 22px;
-            margin-top: 10px;
-        }
-
-        .tool-card {
-            background: #ffffffdd;
-            backdrop-filter: blur(4px);
-            background: rgba(255, 255, 255, 0.85);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 24px;
-            padding: 24px 14px 20px;
-            text-align: center;
-            transition: all 0.25s ease;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.02);
-            cursor: default;
-        }
-
-        .tool-card:hover {
-            transform: translateY(-8px);
-            background: #ffffff;
-            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.08);
-            border-color: #2563eb30;
-        }
-
-        .tool-icon {
-            font-size: 2.6rem;
-            margin-bottom: 6px;
-            display: block;
-        }
-
-        .tool-name {
-            font-weight: 600;
-            font-size: 0.95rem;
-            color: #1a2332;
-        }
-
-        .tool-desc {
-            font-size: 0.8rem;
-            color: #6a7a92;
-            margin-top: 4px;
-        }
-
-        /* ===== HOW IT WORKS ===== */
-        .steps {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px 50px;
-            margin: 30px 0 20px;
-        }
-
-        .step {
-            flex: 1 1 180px;
-            text-align: center;
-        }
-
-        .step-number {
-            display: inline-block;
-            background: #2563eb10;
-            color: #2563eb;
-            font-weight: 800;
-            font-size: 1.6rem;
-            width: 60px;
-            height: 60px;
-            line-height: 60px;
-            border-radius: 60px;
-            margin-bottom: 12px;
-            border: 1px solid #2563eb20;
-        }
-
-        .step h3 {
-            font-size: 1.1rem;
-            margin-bottom: 4px;
-        }
-
-        .step p {
-            color: #4a5a72;
-            font-size: 0.95rem;
-        }
-
-        /* ===== CTA BANNER ===== */
-        .cta-banner {
-            background: linear-gradient(135deg, #1e293b, #0f172a);
-            border-radius: 40px;
-            padding: 50px 30px;
-            margin: 60px 0 30px;
-            text-align: center;
-            color: #fff;
-        }
-
-        .cta-banner h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .cta-banner p {
-            color: #cbd5e1;
-            max-width: 500px;
-            margin: 0 auto 28px;
-            font-size: 1.05rem;
-        }
-
-        .cta-banner .btn-primary {
-            background: #7c3aed;
-            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.35);
-        }
-
-        .cta-banner .btn-primary:hover {
-            background: #6d28d9;
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            border-top: 1px solid rgba(0, 20, 80, 0.06);
-            padding: 30px 0 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 16px;
-            color: #4a5a72;
-            font-size: 0.9rem;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .footer-links a {
-            color: #4a5a72;
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover {
-            color: #2563eb;
-        }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 700px) {
-            header {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 14px;
-            }
-
-            nav {
-                justify-content: center;
-                gap: 10px 16px;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .btn {
-                padding: 12px 28px;
-                font-size: 0.95rem;
-            }
-
-            .tools-grid {
-                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-                gap: 14px;
-            }
-
-            .cta-banner {
-                padding: 30px 20px;
-            }
-
-            .cta-banner h2 {
-                font-size: 1.5rem;
-            }
-
-            .stats {
-                gap: 20px 40px;
-            }
-
-            footer {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.7rem;
-            }
-
-            .tools-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        /* ===== SMOOTH SCROLL ===== */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* fade-in animation */
-        .tool-card {
-            opacity: 0;
-            transform: translateY(24px);
-            animation: fadeUp 0.6s ease forwards;
-        }
-
-        .tool-card:nth-child(1) { animation-delay: 0.02s; }
-        .tool-card:nth-child(2) { animation-delay: 0.06s; }
-        .tool-card:nth-child(3) { animation-delay: 0.10s; }
-        .tool-card:nth-child(4) { animation-delay: 0.14s; }
-        .tool-card:nth-child(5) { animation-delay: 0.18s; }
-        .tool-card:nth-child(6) { animation-delay: 0.22s; }
-        .tool-card:nth-child(7) { animation-delay: 0.26s; }
-        .tool-card:nth-child(8) { animation-delay: 0.30s; }
-        .tool-card:nth-child(9) { animation-delay: 0.34s; }
-        .tool-card:nth-child(10) { animation-delay: 0.38s; }
-        .tool-card:nth-child(11) { animation-delay: 0.42s; }
-        .tool-card:nth-child(12) { animation-delay: 0.46s; }
 
         @keyframes fadeUp {
             to {
@@ -478,141 +175,478 @@
                 transform: translateY(0);
             }
         }
+
+        .sub-tagline {
+            font-size: 1.05rem;
+            color: #4a5a72;
+            margin-bottom: 30px;
+            animation: fadeUp 0.8s ease 0.35s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .sub-tagline .badge-free {
+            display: inline-block;
+            background: #10b98120;
+            color: #059669;
+            padding: 2px 16px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border: 1px solid #10b98130;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+            margin: 20px 0 35px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 420px;
+            padding: 18px 28px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+            background: #2563eb;
+            box-shadow: 0 8px 28px rgba(37, 99, 235, 0.25);
+            position: relative;
+            overflow: hidden;
+            animation: fadeUp 0.8s ease forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .btn:nth-child(1) { animation-delay: 0.5s; }
+        .btn:nth-child(2) { animation-delay: 0.65s; }
+        .btn:nth-child(3) { animation-delay: 0.8s; }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .btn:hover::after {
+            opacity: 1;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 16px 40px rgba(37, 99, 235, 0.35);
+        }
+
+        .btn:active {
+            transform: translateY(-2px) scale(0.98);
+        }
+
+        .btn .icon {
+            margin-left: 14px;
+            font-size: 1.6rem;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover .icon {
+            transform: scale(1.15) rotate(-5deg);
+        }
+
+        .btn-channel {
+            background: #7c3aed;
+            box-shadow: 0 8px 28px rgba(124, 58, 237, 0.25);
+        }
+
+        .btn-channel:hover {
+            box-shadow: 0 16px 40px rgba(124, 58, 237, 0.35);
+        }
+
+        .btn-support {
+            background: #0f172a;
+            box-shadow: 0 8px 28px rgba(15, 23, 42, 0.25);
+        }
+
+        .btn-support:hover {
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.35);
+        }
+
+        /* ===== GLOW PULSE FOR MAIN BUTTON ===== */
+        .btn-main {
+            position: relative;
+        }
+
+        .btn-main::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 63px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed, #2563eb);
+            background-size: 300% 300%;
+            z-index: -1;
+            animation: borderGlow 4s ease-in-out infinite;
+            opacity: 0.4;
+            transition: opacity 0.4s;
+        }
+
+        .btn-main:hover::before {
+            opacity: 0.8;
+        }
+
+        @keyframes borderGlow {
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* ===== FEATURES ===== */
+        .features {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 32px;
+            padding: 30px 25px;
+            margin: 15px 0 25px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+            animation: fadeUp 0.8s ease 0.9s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .features h2 {
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+            color: #1a2332;
+        }
+
+        .features h2 .highlight {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .features p {
+            font-size: 1rem;
+            color: #2d3a4f;
+            max-width: 650px;
+            margin: 0 auto 14px;
+        }
+
+        .features .grid-icons {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            gap: 10px;
+            margin: 16px 0 6px;
+        }
+
+        .features .grid-icons .item {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 16px;
+            padding: 12px 6px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #1a2332;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s;
+        }
+
+        .features .grid-icons .item:hover {
+            background: rgba(37, 99, 235, 0.06);
+            border-color: #2563eb30;
+            transform: translateY(-3px);
+        }
+
+        .features .grid-icons .item .emoji {
+            display: block;
+            font-size: 1.8rem;
+            margin-bottom: 4px;
+        }
+
+        .features .highlight-box {
+            background: linear-gradient(135deg, #2563eb08, #7c3aed08);
+            border-radius: 20px;
+            padding: 16px 20px;
+            border: 1px solid #2563eb15;
+            margin-top: 14px;
+        }
+
+        .features .highlight-box strong {
+            color: #2563eb;
+        }
+
+        .features .highlight-box .free-badge {
+            display: inline-block;
+            background: #10b981;
+            color: #fff;
+            padding: 2px 14px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-right: 6px;
+        }
+
+        /* ===== UPGRADE ===== */
+        .upgrade {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-radius: 32px;
+            padding: 32px 25px;
+            color: #fff;
+            margin: 10px 0 25px;
+            animation: fadeUp 0.8s ease 1.05s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .upgrade::before {
+            content: '✦';
+            position: absolute;
+            top: -30px;
+            right: -20px;
+            font-size: 10rem;
+            color: rgba(255, 255, 255, 0.03);
+        }
+
+        .upgrade h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .upgrade h3 .icon-diamond {
+            display: inline-block;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%,
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+            50% {
+                transform: scale(1.1) rotate(10deg);
+            }
+        }
+
+        .upgrade p {
+            color: #cbd5e1;
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto 12px;
+        }
+
+        .upgrade .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px 20px;
+            margin: 14px 0 10px;
+        }
+
+        .upgrade .payment-methods .method {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 40px;
+            padding: 6px 20px;
+            font-size: 0.9rem;
+            color: #a5b4fc;
+            font-weight: 500;
+        }
+
+        .upgrade .invite-bonus {
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.15);
+            border-radius: 20px;
+            padding: 14px 18px;
+            margin-top: 14px;
+            font-size: 0.95rem;
+            color: #6ee7b7;
+        }
+
+        .upgrade .invite-bonus strong {
+            color: #34d399;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            border-top: 1px solid rgba(0, 20, 80, 0.06);
+            padding: 20px 0 10px;
+            margin-top: 10px;
+            color: #5a6a82;
+            font-size: 0.85rem;
+            width: 100%;
+            animation: fadeUp 0.8s ease 1.2s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 2.4rem;
+            }
+            .tagline {
+                font-size: 1.15rem;
+            }
+            .sub-tagline {
+                font-size: 0.95rem;
+            }
+            .btn {
+                font-size: 1rem;
+                padding: 16px 20px;
+                max-width: 100%;
+            }
+            .features h2 {
+                font-size: 1.4rem;
+            }
+            .features .grid-icons {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .upgrade h3 {
+                font-size: 1.3rem;
+            }
+            .upgrade .payment-methods {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .features .grid-icons {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .logo {
+                font-size: 2rem;
+            }
+        }
+
+        /* ===== SCROLL BEHAVIOR ===== */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ===== SELECTION ===== */
+        ::selection {
+            background: #2563eb;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
+
+    <!-- ===== ANIMATED BACKGROUND ===== -->
+    <div class="bg-shapes">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- ===== MAIN CONTAINER ===== -->
     <div class="container">
 
-        <!-- ===== HEADER ===== -->
-        <header>
-            <div class="logo">Twin <span>AI</span></div>
-            <nav>
-                <a href="#tools">ابزارها</a>
-                <a href="#how">راهنما</a>
-                <a href="#cta">حساب ویژه</a>
-                <a href="#" class="nav-cta">ورود / ثبت‌نام</a>
-            </nav>
-        </header>
+        <!-- ===== LOGO ===== -->
+        <div class="logo">Twin <span>AI</span></div>
 
-        <!-- ===== HERO ===== -->
-        <section class="hero">
-            <h1>
-                <span class="highlight">هوش مصنوعی داخلی، رایگان و نامحدود</span>
-                <br />در پیام‌رسان بله
-            </h1>
+        <!-- ===== TAGLINE ===== -->
+        <div class="tagline">
+            <strong>هوش مصنوعی رایگان و نامحدود</strong> در پیام‌رسان بله
+        </div>
+        <div class="sub-tagline">
+            <span class="badge-free">★ کاملاً رایگان</span>
+            &nbsp;ساخت عکس با هوش مصنوعی • ترجمه • تولید محتوا • کدنویسی
+        </div>
+
+        <!-- ===== ONLY THREE BUTTONS ===== -->
+        <div class="btn-group">
+            <a href="https://ble.ir/twinaibot" target="_blank" class="btn btn-main">
+                <span class="icon">🤖</span> ربات Twin AI
+            </a>
+            <a href="https://ble.ir/twinai" target="_blank" class="btn btn-channel">
+                <span class="icon">📢</span> کانال رسمی
+            </a>
+            <a href="https://ble.ir/supportorg" target="_blank" class="btn btn-support">
+                <span class="icon">🛟</span> پشتیبانی
+            </a>
+        </div>
+
+        <!-- ===== FEATURES ===== -->
+        <div class="features">
+            <h2>
+                ✨ بهترین <span class="highlight">هوش مصنوعی رایگان</span> ایرانی
+            </h2>
             <p>
-                با <strong>هوش مصنوعی داخلی، رایگان و نامحدود</strong> Twin AI،
-                به ترجمه، تولید محتوا، کدنویسی، ساخت تصویر و ده‌ها ابزار هوشمند
-                بدون محدودیت دسترسی داشته باشید.
+                تمام ابزارها بدون محدودیت و کاملاً رایگان — فقط کافی است ربات را شروع کنید.
             </p>
-            <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">
-                    <span class="icon">🚀</span> شروع مکالمه در بله
-                </a>
-                <a href="#tools" class="btn btn-secondary">
-                    <span class="icon">✨</span> مشاهده ابزارها
-                </a>
-            </div>
-        </section>
 
-        <!-- ===== STATS ===== -->
-        <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number">۱۲+</div>
-                <div class="stat-label">ابزار هوشمند</div>
+            <div class="grid-icons">
+                <div class="item"><span class="emoji">🖼️</span>ساخت عکس</div>
+                <div class="item"><span class="emoji">🇮🇷</span>ترجمه فارسی</div>
+                <div class="item"><span class="emoji">🇬🇧</span>ترجمه انگلیسی</div>
+                <div class="item"><span class="emoji">🇸🇦</span>ترجمه عربی</div>
+                <div class="item"><span class="emoji">📝</span>تولید محتوا</div>
+                <div class="item"><span class="emoji">📄</span>نوشتن مقاله</div>
+                <div class="item"><span class="emoji">🔄</span>بازنویسی</div>
+                <div class="item"><span class="emoji">📌</span>خلاصه‌سازی</div>
+                <div class="item"><span class="emoji">💡</span>ایده‌برداری</div>
+                <div class="item"><span class="emoji">✅</span>اصلاح گرامر</div>
+                <div class="item"><span class="emoji">💻</span>کدنویسی</div>
+                <div class="item"><span class="emoji">📜</span>شعر و ادبیات</div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">رایگان</div>
-                <div class="stat-label">هوش مصنوعی نامحدود</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">۲۴/۷</div>
-                <div class="stat-label">پشتیبانی در بله</div>
+
+            <div class="highlight-box">
+                <strong>ساخت عکس با هوش مصنوعی</strong>
+                <span class="free-badge">رایگان و نامحدود</span>
+                <br />
+                بدون محدودیت، هر تعداد تصویر که بخواهید با هوش مصنوعی بسازید.
             </div>
         </div>
 
-        <!-- ===== TOOLS ===== -->
-        <h2 class="section-title" id="tools">⚡ ابزارهای هوش مصنوعی داخلی و رایگان</h2>
-        <p class="section-sub">
-            از منوی ربات یا دکمه‌های زیر، ابزار مورد نظر را انتخاب کنید و متن یا موضوع خود را ارسال کنید.
-            <br /><strong>همه ابزارها با هوش مصنوعی نامحدود و رایگان در دسترس هستند.</strong>
-        </p>
-
-        <div class="tools-grid">
-            <div class="tool-card"><span class="tool-icon">🇮🇷</span><div class="tool-name">ترجمه به فارسی</div><div class="tool-desc">متن به فارسی روان</div></div>
-            <div class="tool-card"><span class="tool-icon">🇬🇧</span><div class="tool-name">ترجمه به انگلیسی</div><div class="tool-desc">متن به انگلیسی</div></div>
-            <div class="tool-card"><span class="tool-icon">🇸🇦</span><div class="tool-name">ترجمه به عربی</div><div class="tool-desc">متن به عربی</div></div>
-            <div class="tool-card"><span class="tool-icon">📝</span><div class="tool-name">تولید محتوا</div><div class="tool-desc">متن تبلیغاتی، وبلاگ و...</div></div>
-            <div class="tool-card"><span class="tool-icon">📄</span><div class="tool-name">نوشتن مقاله</div><div class="tool-desc">مقاله‌های حرفه‌ای</div></div>
-            <div class="tool-card"><span class="tool-icon">🐦</span><div class="tool-name">تولید محتوای توییتر</div><div class="tool-desc">پست و توییت جذاب</div></div>
-            <div class="tool-card"><span class="tool-icon">🔄</span><div class="tool-name">بازنویسی متن</div><div class="tool-desc">بازنویسی با حفظ مفهوم</div></div>
-            <div class="tool-card"><span class="tool-icon">📌</span><div class="tool-name">خلاصه‌سازی متن</div><div class="tool-desc">چکیده‌ای از متن بلند</div></div>
-            <div class="tool-card"><span class="tool-icon">💡</span><div class="tool-name">ایده‌برداری</div><div class="tool-desc">ایده‌های خلاقانه</div></div>
-            <div class="tool-card"><span class="tool-icon">✅</span><div class="tool-name">اصلاح گرامر</div><div class="tool-desc">ویرایش دستوری و نگارشی</div></div>
-            <div class="tool-card"><span class="tool-icon">💻</span><div class="tool-name">نوشتن کد</div><div class="tool-desc">کد نویسی در زبان‌های مختلف</div></div>
-            <div class="tool-card"><span class="tool-icon">📜</span><div class="tool-name">شعر و ادبیات</div><div class="tool-desc">سرودن شعر و متن ادبی</div></div>
-        </div>
-
-        <!-- ===== HOW IT WORKS ===== -->
-        <h2 class="section-title" id="how">📌 چگونه از هوش مصنوعی نامحدود و رایگان استفاده کنیم؟</h2>
-        <p class="section-sub">
-            در کمتر از یک دقیقه به تمام قابلیت‌های <strong>هوش مصنوعی داخلی و رایگان</strong> Twin AI دسترسی پیدا کنید.
-        </p>
-
-        <div class="steps">
-            <div class="step">
-                <div class="step-number">۱</div>
-                <h3>ربات را در بله پیدا کنید</h3>
-                <p>در پیام‌رسان بله به دنبال <strong>@TwinAiBoT</strong> بگردید.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">۲</div>
-                <h3>شروع کنید</h3>
-                <p>دکمه <strong>شروع</strong> را بزنید و از منوی اصلی ابزار خود را انتخاب کنید.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">۳</div>
-                <h3>درخواست خود را ارسال کنید</h3>
-                <p>متن، موضوع یا دستور خود را بنویسید و نتیجه را با <strong>هوش مصنوعی نامحدود و رایگان</strong> دریافت کنید.</p>
-            </div>
-        </div>
-
-        <!-- ===== CTA BANNER ===== -->
-        <div class="cta-banner" id="cta">
-            <h2>💎 حساب ویژه هوش مصنوعی داخلی</h2>
+        <!-- ===== UPGRADE ===== -->
+        <div class="upgrade">
+            <h3>
+                <span class="icon-diamond">💎</span> حساب ویژه Twin AI
+            </h3>
             <p>
-                با تهیه حساب ویژه، به قابلیت‌های پیشرفته‌تر، اولویت در پردازش و
-                پشتیبانی اختصاصی در بله دسترسی پیدا کنید.
-                <br /><strong>هوش مصنوعی نامحدود و رایگان همچنان در دسترس است.</strong>
+                با تهیه حساب ویژه، به قابلیت‌های پیشرفته‌تر، اولویت پردازش و
+                پشتیبانی اختصاصی دسترسی پیدا کنید.
             </p>
-            <a href="#" class="btn btn-primary">مشاهده مزایا و ثبت‌نام</a>
+            <div class="payment-methods">
+                <span class="method">زرین‌پال</span>
+                <span class="method">کیف پول بله</span>
+            </div>
+            <div class="invite-bonus">
+                🎁 <strong>دعوت ۱۰ نفر</strong> — حساب ویژه برای شما <strong>رایگان</strong> فعال می‌شود!
+            </div>
         </div>
 
         <!-- ===== FOOTER ===== -->
         <footer>
-            <div>© ۱۴۰۵ Twin AI | تمامی حقوق محفوظ است.</div>
-            <div class="footer-links">
-                <a href="#">راهنما</a>
-                <a href="#">پشتیبانی</a>
-                <a href="#">حریم خصوصی</a>
-                <a href="#">بله</a>
-            </div>
+            © ۱۴۰۵ Twin AI | تمامی حقوق محفوظ است.
         </footer>
 
     </div>
-    <!-- end container -->
 
-    <script>
-        // اسکرول نرم برای لینک‌های داخلی
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
