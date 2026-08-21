@@ -34,6 +34,9 @@
         }
     </script>
 
+    <!-- Font Awesome (آیکون‌های وکتوری بدون ایموجی) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
     <style>
         /* ===== RESET & BASE ===== */
         * {
@@ -227,11 +230,18 @@
             animation: fadeUp 0.8s ease forwards;
             opacity: 0;
             transform: translateY(20px);
+            gap: 12px;
         }
 
-        .btn:nth-child(1) { animation-delay: 0.5s; }
-        .btn:nth-child(2) { animation-delay: 0.65s; }
-        .btn:nth-child(3) { animation-delay: 0.8s; }
+        .btn:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+        .btn:nth-child(2) {
+            animation-delay: 0.65s;
+        }
+        .btn:nth-child(3) {
+            animation-delay: 0.8s;
+        }
 
         .btn::after {
             content: '';
@@ -240,7 +250,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
             opacity: 0;
             transition: opacity 0.4s;
         }
@@ -258,13 +268,12 @@
             transform: translateY(-2px) scale(0.98);
         }
 
-        .btn .icon {
-            margin-left: 14px;
-            font-size: 1.6rem;
+        .btn i {
+            font-size: 1.4rem;
             transition: transform 0.3s;
         }
 
-        .btn:hover .icon {
+        .btn:hover i {
             transform: scale(1.15) rotate(-5deg);
         }
 
@@ -286,9 +295,32 @@
             box-shadow: 0 16px 40px rgba(15, 23, 42, 0.35);
         }
 
-        /* ===== GLOW PULSE FOR MAIN BUTTON ===== */
+        /* ===== دکمه اصلی با انیمیشن تکون ===== */
         .btn-main {
             position: relative;
+            animation: fadeUp 0.8s ease 0.5s forwards, wobble 3s ease-in-out infinite 1.5s;
+        }
+
+        @keyframes wobble {
+            0%,
+            100% {
+                transform: translateX(0) rotate(0deg);
+            }
+            15% {
+                transform: translateX(-6px) rotate(-1.5deg);
+            }
+            30% {
+                transform: translateX(6px) rotate(1.5deg);
+            }
+            45% {
+                transform: translateX(-4px) rotate(-1deg);
+            }
+            60% {
+                transform: translateX(4px) rotate(1deg);
+            }
+            80% {
+                transform: translateX(-2px) rotate(-0.5deg);
+            }
         }
 
         .btn-main::before {
@@ -369,6 +401,10 @@
             color: #1a2332;
             border: 1px solid rgba(255, 255, 255, 0.3);
             transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
         }
 
         .features .grid-icons .item:hover {
@@ -377,10 +413,9 @@
             transform: translateY(-3px);
         }
 
-        .features .grid-icons .item .emoji {
-            display: block;
+        .features .grid-icons .item i {
             font-size: 1.8rem;
-            margin-bottom: 4px;
+            color: #2563eb;
         }
 
         .features .highlight-box {
@@ -421,7 +456,9 @@
         }
 
         .upgrade::before {
-            content: '✦';
+            content: '\f005';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
             position: absolute;
             top: -30px;
             right: -20px;
@@ -434,9 +471,10 @@
             margin-bottom: 10px;
         }
 
-        .upgrade h3 .icon-diamond {
+        .upgrade h3 i {
             display: inline-block;
             animation: sparkle 2s ease-in-out infinite;
+            color: #fbbf24;
         }
 
         @keyframes sparkle {
@@ -574,49 +612,50 @@
             <strong>هوش مصنوعی رایگان و نامحدود</strong> در پیام‌رسان بله
         </div>
         <div class="sub-tagline">
-            <span class="badge-free">★ کاملاً رایگان</span>
+            <span class="badge-free"><i class="fas fa-star" style="margin-left:6px;"></i> کاملاً رایگان</span>
             &nbsp;ساخت عکس با هوش مصنوعی • ترجمه • تولید محتوا • کدنویسی
         </div>
 
         <!-- ===== ONLY THREE BUTTONS ===== -->
         <div class="btn-group">
             <a href="https://ble.ir/twinaibot" target="_blank" class="btn btn-main">
-                <span class="icon">🤖</span> ربات Twin AI
+                <i class="fas fa-comment-dots"></i> شروع چت با هوش مصنوعی
             </a>
             <a href="https://ble.ir/twinai" target="_blank" class="btn btn-channel">
-                <span class="icon">📢</span> کانال رسمی
+                <i class="fas fa-bullhorn"></i> کانال رسمی
             </a>
             <a href="https://ble.ir/supportorg" target="_blank" class="btn btn-support">
-                <span class="icon">🛟</span> پشتیبانی
+                <i class="fas fa-headset"></i> پشتیبانی
             </a>
         </div>
 
         <!-- ===== FEATURES ===== -->
         <div class="features">
             <h2>
-                ✨ بهترین <span class="highlight">هوش مصنوعی رایگان</span> ایرانی
+                <i class="fas fa-crown" style="color:#2563eb; margin-left:8px;"></i>
+                بهترین <span class="highlight">هوش مصنوعی رایگان</span> ایرانی
             </h2>
             <p>
                 تمام ابزارها بدون محدودیت و کاملاً رایگان — فقط کافی است ربات را شروع کنید.
             </p>
 
             <div class="grid-icons">
-                <div class="item"><span class="emoji">🖼️</span>ساخت عکس</div>
-                <div class="item"><span class="emoji">🇮🇷</span>ترجمه فارسی</div>
-                <div class="item"><span class="emoji">🇬🇧</span>ترجمه انگلیسی</div>
-                <div class="item"><span class="emoji">🇸🇦</span>ترجمه عربی</div>
-                <div class="item"><span class="emoji">📝</span>تولید محتوا</div>
-                <div class="item"><span class="emoji">📄</span>نوشتن مقاله</div>
-                <div class="item"><span class="emoji">🔄</span>بازنویسی</div>
-                <div class="item"><span class="emoji">📌</span>خلاصه‌سازی</div>
-                <div class="item"><span class="emoji">💡</span>ایده‌برداری</div>
-                <div class="item"><span class="emoji">✅</span>اصلاح گرامر</div>
-                <div class="item"><span class="emoji">💻</span>کدنویسی</div>
-                <div class="item"><span class="emoji">📜</span>شعر و ادبیات</div>
+                <div class="item"><i class="fas fa-image"></i>ساخت عکس</div>
+                <div class="item"><i class="fas fa-language"></i>ترجمه فارسی</div>
+                <div class="item"><i class="fas fa-language"></i>ترجمه انگلیسی</div>
+                <div class="item"><i class="fas fa-language"></i>ترجمه عربی</div>
+                <div class="item"><i class="fas fa-pen-fancy"></i>تولید محتوا</div>
+                <div class="item"><i class="fas fa-newspaper"></i>نوشتن مقاله</div>
+                <div class="item"><i class="fas fa-sync-alt"></i>بازنویسی</div>
+                <div class="item"><i class="fas fa-compress-alt"></i>خلاصه‌سازی</div>
+                <div class="item"><i class="fas fa-lightbulb"></i>ایده‌برداری</div>
+                <div class="item"><i class="fas fa-check-circle"></i>اصلاح گرامر</div>
+                <div class="item"><i class="fas fa-code"></i>کدنویسی</div>
+                <div class="item"><i class="fas fa-feather-alt"></i>شعر و ادبیات</div>
             </div>
 
             <div class="highlight-box">
-                <strong>ساخت عکس با هوش مصنوعی</strong>
+                <strong><i class="fas fa-paint-brush" style="margin-left:6px;"></i>ساخت عکس با هوش مصنوعی</strong>
                 <span class="free-badge">رایگان و نامحدود</span>
                 <br />
                 بدون محدودیت، هر تعداد تصویر که بخواهید با هوش مصنوعی بسازید.
@@ -626,18 +665,19 @@
         <!-- ===== UPGRADE ===== -->
         <div class="upgrade">
             <h3>
-                <span class="icon-diamond">💎</span> حساب ویژه Twin AI
+                <i class="fas fa-gem"></i> حساب ویژه Twin AI
             </h3>
             <p>
                 با تهیه حساب ویژه، به قابلیت‌های پیشرفته‌تر، اولویت پردازش و
                 پشتیبانی اختصاصی دسترسی پیدا کنید.
             </p>
             <div class="payment-methods">
-                <span class="method">زرین‌پال</span>
-                <span class="method">کیف پول بله</span>
+                <span class="method"><i class="fas fa-credit-card" style="margin-left:6px;"></i>زرین‌پال</span>
+                <span class="method"><i class="fas fa-wallet" style="margin-left:6px;"></i>کیف پول بله</span>
             </div>
             <div class="invite-bonus">
-                🎁 <strong>دعوت ۱۰ نفر</strong> — حساب ویژه برای شما <strong>رایگان</strong> فعال می‌شود!
+                <i class="fas fa-user-plus" style="margin-left:8px;"></i>
+                <strong>دعوت ۱۰ نفر</strong> — حساب ویژه برای شما <strong>رایگان</strong> فعال می‌شود!
             </div>
         </div>
 
